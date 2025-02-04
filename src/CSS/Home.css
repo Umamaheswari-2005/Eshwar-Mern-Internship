@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+
+/*Home*/
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Makes the container take up the full viewport height */
+  padding: 2rem;
+   /* Adjust background as needed */
+  position: relative;
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* Space between image and text */
+  z-index: 2; /* To ensure it's above the background GIF */
+  padding-bottom:100px;
+}
+
+.home-photo {
+  width: 280px; /* Adjust size as needed */
+  height: 450px; /* Keep it square for border-radius */
+  border-radius: 50%; /* Makes the image oval */
+  box-shadow: 10px 40px 60px rgb(0, 225, 255); /* Subtle shadow for effect */
+  object-fit: cover; /* Ensures the image fits within the oval */
+}
+
+.home-intro {
+  font-size: 1rem; /* Adjust font size */
+  color: #f11f1f; /* Text color */
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+
+.home h1 {
+  font-size: 1.8rem; /* Larger text for the name */
+  color: #1d47f0;
+  margin: 0;
+}
+
+.react-gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1; /* Ensures it stays in the background */
+  opacity: 0.3; /* Lightens the GIF */
+}
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  
+
+
+  
+
+  
+}
+
+
+
+

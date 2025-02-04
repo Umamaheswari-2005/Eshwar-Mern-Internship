@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.react-gif {
+  position: fixed;  /* Fixes the video position in the viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;  /* Fill the entire viewport height */
+  object-fit: cover;  /* Ensure the video covers the entire screen */
+  z-index: -1;  /* Keep it behind the content */
+  background-color: black;  /* Optional, in case the video doesn't load */
+}
+
+
+.about {
+  position: relative;
+ 
+  text-align: center;
+  padding: 20px;
+}
+
+.about h1 {
+  color : aqua ;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.about h2 {
+  color : rgb(238, 255, 0) ;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.bio, .experience {
+  margin: 20px 0;
+}
+
+.bio p {
+  padding : 80px;
+  color : rgb(9, 248, 9);
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.experience p {
+  padding : 10px;
+  color : rgb(9, 248, 9);
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
