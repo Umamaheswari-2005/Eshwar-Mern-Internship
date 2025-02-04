@@ -1,0 +1,146 @@
+/* Global Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Container Styles */
+.container {
+    padding: 20px;
+}
+
+/* List Group Styles */
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+}
+
+.list-group-item span {
+    font-size: 1.1em;
+}
+
+/* Button Styles */
+button.variant-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+button.variant-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* Task View Styles */
+.task-view-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-item {
+    padding: 1rem;
+    margin-bottom: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.task-item:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-item.completed {
+    background-color: #f8f9fa;
+}
+
+.task-item.overdue:not(.completed) {
+    border-left: 4px solid #dc3545;
+}
+
+.task-content {
+    flex-grow: 1;
+}
+
+.task-header {
+    margin-bottom: 8px;
+}
+
+.task-details {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    color: #666;
+}
+
+.priority-badge {
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.9em;
+    text-transform: capitalize;
+}
+
+.priority-badge[class*="bg-danger"] {
+    background-color: #dc3545 !important;
+}
+
+.priority-badge[class*="bg-warning"] {
+    background-color: #ffc107 !important;
+    color: #000;
+}
+
+.priority-badge[class*="bg-info"] {
+    background-color: #0dcaf0 !important;
+}
+
+.complete-button {
+    min-width: 100px;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.complete-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(40, 167, 69, 0.2);
+}
+
+.badge.bg-danger {
+    background-color: #dc3545 !important;
+}
+
+.badge.bg-warning {
+    background-color: #ffc107 !important;
+    color: #000;
+}
+
+.badge.bg-info {
+    background-color: #17a2b8 !important;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.text-success {
+    color: #28a745 !important;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}

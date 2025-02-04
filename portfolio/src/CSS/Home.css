@@ -1,0 +1,169 @@
+/* Global Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* Container Styles */
+.container {
+    padding: 20px;
+}
+
+/* Card Styles */
+.card {
+    border: 1px solid #007bff;
+    border-radius: 8px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    color: #007bff;
+}
+
+.card-text {
+    font-size: 1.1em;
+}
+
+/* Alert Styles */
+.alert-info {
+    background-color: #fe2f2f;
+    color: #007bff;
+    border-color: #ee6060;
+}
+
+/* Home Styles */
+.home-container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.home-container h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.notification-card {
+    transition: transform 0.2s ease-in-out;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.notification-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notification-card .card-title {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.notification-card .card-text {
+    color: #34495e;
+    line-height: 1.6;
+}
+
+.task-reminder-item {
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.task-reminder-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.task-reminder-item.current-reminder {
+    border-left: 4px solid #28a745;
+    background-color: rgba(40, 167, 69, 0.1);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(40, 167, 69, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(40, 167, 69, 0);
+    }
+}
+
+.task-content {
+    flex-grow: 1;
+}
+
+.task-details {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.badge {
+    font-size: 0.85em;
+    padding: 0.35em 0.65em;
+}
+
+.task-reminder-item h5 {
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.text-muted {
+    color: #6c757d;
+}
+
+.alert {
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.notification-toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    min-width: 300px;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        padding: 1rem;
+    }
+
+    .task-details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .badge {
+        margin-left: 0 !important;
+    }
+
+    .notification-toast {
+        width: 90%;
+        left: 5%;
+        right: 5%;
+    }
+}
